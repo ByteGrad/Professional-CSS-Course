@@ -494,7 +494,8 @@ button {
     }
 
     .canvas {
-        width: initial;
+        /* width: initial; */ /* UPDATE: Chrome changed functioning of 'width: initial' for canvas HTML elements, use 100% instead (see below) */
+        width: 100%;
         height: 500px;
     }
 

@@ -1,3 +1,3 @@
 # Fixes for possible bugs you may have
 
-Currently there are no known bugs
+Video 14: the 'width'-value for '.canvas' should be '100%', not 'initial'
