@@ -102,7 +102,8 @@ html {
     width: 124rem;
     height: 103rem;
     background-color: #fff;
-    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35);
+    /* box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35); */
+    box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65); /* looks better */
     margin: 80px 0;
 
     display: grid;
