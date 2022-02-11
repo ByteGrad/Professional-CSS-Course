@@ -1,12 +1,10 @@
-# CSS Course
+# CSS Course -- [SEE COURSE HERE](https://bytegrad.com/professional-css)
 
-Hey, here you can find all the resources for the CSS course. You'll also see the necessary resources below each video on the website of course.
+Hey, here you can find all the resources for the [CSS course](https://bytegrad.com/professional-css). You'll also see the necessary resources below each video on the website of course.
 
 At the top level, there is a folder for each project and then 3 files: a file for the slides, a readme file and a file for bugs in the course. The readme file is what you're reading right now because GitHub displays the content of the readme file by default.
 
 In each of the project folders, you can find its resources (font, images, etc.) and final code of each video of that project. You can use those when you're stuck. Simply copy the content of the files of a particular video into your own files and you'll be up to speed. During project 2, if you copy and paste the **package.json** file then you should also run the `npm install` command so that the installed dependencies are also updated.
-
-## Questions
 
 ### Q1: Something is not working! What should I do?
 **A:** Follow these steps:
@@ -18,4 +16,4 @@ In each of the project folders, you can find its resources (font, images, etc.) 
 I'm online throughout most of the day and will help you as quickly as I can! In the meantime, I apologize for the inconvenience. Sometimes things break after recording the videos, but I try to be quick with any bugs that come up.
 
 ### Q2: How can I contact you?
-**A:** You can always contact me by email: support@bytegrad.com, but please open an issue for this GitHub repository to submit problems with the course. I simply don't have the time to respond to thousands of emails.
+**A:** You can always contact me by email: support@bytegrad.com, but please open an issue for this GitHub repository to submit problems with the course.
