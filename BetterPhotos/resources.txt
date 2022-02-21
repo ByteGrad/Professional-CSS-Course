@@ -42,7 +42,7 @@ https://bytegrad.com/course-assets/css/2/pattern.svg
     <img class="gallery__img" src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&w=590&q=120" alt="Gallery image">
 </div>
 <div class="gallery__img-wrapper">
-    <img class="gallery__img" src="https://images.unsplash.com/photo-1611599361713-17db15c39691?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&h=416&q=100" alt="Gallery image">
+    <img class="gallery__img" src="https://static.wixstatic.com/media/7fa1cf_e23670ec2b0d4eb086a3bc08e06c8d05~mv2.jpg/v1/fill/w_640,h_416,q_100,f_png/7fa1cf_e23670ec2b0d4eb086a3bc08e06c8d05~mv2.png" alt="Gallery image">
 </div>
 <div class="gallery__img-wrapper">
     <img class="gallery__img" src="https://images.unsplash.com/photo-1550431241-a2b960657a6e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=590&q=100" alt="Gallery image">
