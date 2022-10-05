@@ -532,12 +532,12 @@ button {
 
     .canvas__circle:nth-of-type(3) {
         bottom: 11.5%;
-        right: 9.8%;
+        left: 9.8%;
     }
 
     .canvas__circle:nth-of-type(4) {
         bottom: 11.5%;
-        left: 9.8%;
+        right: 9.8%;
     }
 
     .tools {
