@@ -1,0 +1,334 @@
+// VARIABLES
+$color-accent: #2CC695;
+
+$color-grey-light: #EEF3F4;
+$color-grey-medium: #A9B4B7;
+$color-grey-dark: #555A5B;
+
+$ts: all 0.2s;
+
+// RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    font: inherit;
+    border: none;
+}
+
+button {
+    border: none;
+    background-color: initial;
+    outline: none; // don't forget indicator for focus state
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+// UTILITY CLASS
+.u-italic {
+    font-style: italic;
+}
+
+.u-accent {
+    color: $color-accent;
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-bold {
+    font-weight: 500;
+}
+
+.u-bolder {
+    font-weight: 700;
+}
+
+// BASE STYLES
+.page {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-image: 
+        url(https://bytegrad.com/course-assets/css/2/pattern.svg),
+        linear-gradient(to bottom right, #8FD861, #2CC695 90%);
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.app {
+    width: 1240px;
+    height: 1030px;
+    background-color: #fff;
+    /* box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35); */
+    box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65); /* looks better */
+    margin: 80px 0;
+
+    display: grid;
+    grid-template-columns: 355px 1fr;
+    grid-template-rows: 65px 724px 1fr;
+}
+
+// STYLES
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 26px;
+    margin-right: 48px;
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        background-color: $color-grey-light;
+        height: 34px;
+        width: 405px;
+        border-radius: 500px;
+        font-size: 13px;
+        color: $color-grey-dark;
+        padding-left: 20px;
+        outline: none;
+        transition: $ts;
+
+        &:focus {
+            width: 425px;
+        }
+        
+        &::placeholder {
+            color: $color-grey-medium;
+        }
+    }
+    
+    &__submit {
+        font-size: 15px;
+        color: $color-grey-medium;
+        cursor: pointer;
+        transition: $ts;
+        position: absolute;
+        right: 13px;
+        top: 8px;
+
+        &:focus {
+            color: $color-grey-dark;
+        }
+    }
+    
+    &__icon {
+        
+    }
+}
+
+.nav {
+    margin-left: auto;
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        
+    }
+    
+    &__link {
+        padding: 0 20px;
+        transition: $ts;
+        height: 65px;
+        display: block;
+
+        &:hover,
+        &:focus {
+            background-color: $color-grey-light;
+        }
+    }
+    
+    &__icon {
+        color: $color-grey-medium;
+        font-size: 22px;
+        line-height: 65px;
+    }
+}
+
+// ------------------
+
+.sidebar {
+    background-color: #11271F;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.intro {
+    padding: 48px 35px 45px;
+    border-bottom: 1px solid rgba(#fff, 0.1);
+
+    &__text {
+        color: $color-grey-light;
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 1.8;
+    }
+}
+
+.first-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 30px;
+
+    &__img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #fff;
+
+        &:not(:first-child) {
+            margin-left: -8px;
+        }
+    }
+
+    &__container {
+        margin-left: 10px;
+    }
+
+    &__number {
+        font-weight: 500;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $color-grey-medium;
+        margin-top: -5px;
+    }
+}
+
+.auth {
+
+    &__text {
+        color: $color-grey-medium;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    &__link {
+        font-weight: 500;
+        color: $color-accent;
+    }
+}
+
+.btn {
+    background-color: #16B47F;
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: $ts;
+
+    &:hover,
+    &:focus {
+        background-color: #119267;
+    }
+
+    &__icon {
+        margin-left: 2px;
+    }
+}
+
+.upload {
+    padding: 45px 35px;
+    border-bottom: 1px solid rgba(#fff, 0.1);
+    color: $color-grey-medium;
+
+    &__container {
+        background-color: rgba(#fff, 0.03);
+        height: 330px;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: $ts;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            background-color: rgba(#fff, 0.06);
+        }
+
+        &::before {
+            content: '';
+            border: 2px dashed #434747;
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+        }
+    }
+
+    &__icon {
+        font-size: 23px;
+    }
+
+    &__text {
+        color: #fff;
+        margin-top: 8px;
+    }
+
+    &__alternative {
+        font-size: 12px;
+        margin-top: -2px;
+    }
+}
+
+// ------------------
+
+.gallery {
+    background-color: #EEF3F4;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+// ------------------
+
+.steps {
+    background-color: #E7EDEE;
+
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}

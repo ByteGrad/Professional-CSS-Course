@@ -1,0 +1,37 @@
+## Resources for SocialEditor
+
+###### FAVICON
+
+<link rel="icon" type="image/png" href="https://bytegrad.com/course-assets/css/1/favicon.png">
+
+###### FONT
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ==" crossorigin="anonymous" />
+
+###### FONTAWESOME-ICONS
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+
+###### LOGO
+
+<img class="logo" src="https://bytegrad.com/course-assets/css/1/logo.svg" alt="Logo">
+
+###### IMAGES
+
+<img class="dd-toggle__img" src="https://bytegrad.com/course-assets/images/flower.png" alt="User photo">
+
+
+<img class="canvas__bg-img" src="https://bytegrad.com/course-assets/images/drink-lg.png" alt="Background image">
+
+<img class="canvas__fg-img" src="https://bytegrad.com/course-assets/images/drink.png" alt="Foreground image">
+
+
+<img class="panel__img" src="https://bytegrad.com/course-assets/images/dunes.png" alt="Uploaded image">
+
+<img class="panel__img" src="https://bytegrad.com/course-assets/images/lava.png" alt="Uploaded image">
+
+<img class="panel__img" src="https://bytegrad.com/course-assets/images/drink-small.png" alt="Uploaded image">
+
+<img class="panel__img" src="https://bytegrad.com/course-assets/images/painting.png" alt="Uploaded image">
+
+<img class="panel__img" src="https://bytegrad.com/course-assets/images/flower-box.png" alt="Uploaded image">

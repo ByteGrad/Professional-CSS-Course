@@ -1,0 +1,172 @@
+// VARIABLES
+$color-grey-light: #EEF3F4;
+$color-grey-medium: #A9B4B7;
+$color-grey-dark: #555A5B;
+
+$ts: all 0.4s;
+
+// RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    font: inherit;
+    border: none;
+}
+
+button {
+    border: none;
+    background-color: initial;
+    outline: none; // don't forget indicator for focus state
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+// BASE STYLES
+.page {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-image: 
+        url(https://bytegrad.com/course-assets/css/2/pattern.svg),
+        linear-gradient(to bottom right, #8FD861, #2CC695 90%);
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.app {
+    width: 1240px;
+    height: 1030px;
+    background-color: #fff;
+    /* box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35); */
+    box-shadow: 0 25px 150px rgba(0, 0, 0, 0.65); /* looks better */
+    margin: 80px 0;
+
+    display: grid;
+    grid-template-columns: 355px 1fr;
+    grid-template-rows: 65px 724px 1fr;
+}
+
+// STYLES
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 26px;
+    margin-right: 48px;
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        background-color: $color-grey-light;
+        height: 34px;
+        width: 405px;
+        border-radius: 500px;
+        font-size: 13px;
+        color: $color-grey-dark;
+        padding-left: 20px;
+        outline: none;
+        transition: $ts;
+
+        &:focus {
+            width: 425px;
+        }
+        
+        &::placeholder {
+            color: $color-grey-medium;
+        }
+    }
+    
+    &__submit {
+        font-size: 15px;
+        color: $color-grey-medium;
+        cursor: pointer;
+        transition: $ts;
+        position: absolute;
+        right: 13px;
+        top: 8px;
+
+        &:focus {
+            color: $color-grey-dark;
+        }
+    }
+    
+    &__icon {
+        
+    }
+}
+
+.nav {
+    margin-left: auto;
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        
+    }
+    
+    &__link {
+        padding: 0 20px;
+        transition: $ts;
+        height: 65px;
+        display: block;
+
+        &:hover,
+        &:focus {
+            background-color: $color-grey-light;
+        }
+    }
+    
+    &__icon {
+        color: $color-grey-medium;
+        font-size: 22px;
+        line-height: 65px;
+    }
+}
+
+.sidebar {
+    background-color: #11271F;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.gallery {
+    background-color: #EEF3F4;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.steps {
+    background-color: #E7EDEE;
+
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
