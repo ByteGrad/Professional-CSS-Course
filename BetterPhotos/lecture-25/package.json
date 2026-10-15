@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch --no-source-map main.scss style.css"
+    "compile": "sass --watch --no-source-map main.scss style.css",
+    "build": "sass --no-source-map main.scss /tmp/bytegrad-course-check.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.35.0"
+    "sass": "1.105.1"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0"
   }
 }

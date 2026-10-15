@@ -7,15 +7,19 @@
     "compile": "sass --watch --no-source-map src/main.scss src/style.css",
     "build:compile": "sass --no-source-map src/main.scss build/compiled.css",
     "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
-    "build:optimize": "csso build/prefixed.css --output build/style.css"
+    "build:optimize": "postcss build/prefixed.css --use cssnano --output build/style.css",
+    "build": "npm run build:compile && npm run build:prefixes && npm run build:optimize"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "csso-cli": "^3.0.0",
-    "postcss": "^8.3.5",
-    "postcss-cli": "^8.3.1",
-    "sass": "^1.35.0"
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.30",
+    "postcss-cli": "12.0.0",
+    "sass": "1.105.1",
+    "cssnano": "9.8.0"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0"
   }
 }

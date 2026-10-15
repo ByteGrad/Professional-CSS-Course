@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directories:
+  - /BetterPhotos/lecture-21
+  - /BetterPhotos/lecture-22
+  - /BetterPhotos/lecture-23
+  - /BetterPhotos/lecture-24
+  - /BetterPhotos/lecture-25
+  - /BetterPhotos/lecture-26
+  - /BetterPhotos/lecture-27
+  - /BetterPhotos/lecture-28
+  - /BetterPhotos/lecture-29
+  schedule:
+    interval: weekly
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+  open-pull-requests-limit: 5
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: weekly
