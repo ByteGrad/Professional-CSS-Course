@@ -14,7 +14,7 @@
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "csso-cli": "^3.0.0",
-    "postcss": "^8.3.5",
+    "postcss": "^8.5.23",
     "postcss-cli": "^8.3.1",
     "sass": "^1.35.0"
   }
