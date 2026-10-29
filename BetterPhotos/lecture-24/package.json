@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "1.105.1"
+    "sass": "1.106.1"
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0"

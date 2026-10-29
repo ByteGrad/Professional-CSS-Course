@@ -14,10 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "10.6.1",
-    "postcss": "8.5.30",
+    "postcss": "8.5.31",
     "postcss-cli": "12.0.0",
-    "sass": "1.105.1",
-    "cssnano": "9.8.0"
+    "sass": "1.106.1",
+    "cssnano": "9.9.0"
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0"
